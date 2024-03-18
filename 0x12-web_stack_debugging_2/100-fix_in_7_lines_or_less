@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Run nginx as the nginx user
-
 pkill apache2
 sed -i "s/listen 80/listen 8080/" /etc/nginx/sites-available/default
 sed -i "s/listen \[::\]:80/listen \[::\]:8080/" /etc/nginx/sites-available/default
